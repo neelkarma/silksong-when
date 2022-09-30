@@ -14,20 +14,25 @@
   onDestroy(() => clearInterval(interval));
 </script>
 
+<svelte:head>
+  <title>{Math.floor(daysLeft)} days left until Silksong comes out</title>
+</svelte:head>
+
 <h1>Silksong When</h1>
-<p>The current time is <strong>{new Date(now).toString()}</strong></p>
+<p>The current time is <strong>{new Date(now).toString()}</strong>.</p>
 <p>
-  There are approximately <strong>{daysLeft}</strong> days left until Silksong has
-  to be released.
+  Silksong will be released in a maximum of approximately <strong
+    >{daysLeft}</strong
+  > days.
 </p>
 <p>
-  This means that there is roughly a <strong>{probability * 100}%</strong> chance
+  This means that there is a roughly <strong>{probability * 100}%</strong> chance
   Silksong will be released today.
 </p>
 <p class="muted">
   <em>
-    There is also an API Endpoint where you can request this information, at <a
-      href="/api"><code>GET /api</code></a
+    You can request this data programatically through the API: <a href="/api"
+      ><code>GET /api</code></a
     >
   </em>
 </p>
