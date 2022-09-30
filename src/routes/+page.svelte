@@ -29,11 +29,11 @@
   This means that there is a roughly <strong>{probability * 100}%</strong> chance
   Silksong will be released today.
 </p>
+
 <p class="muted">
   <em>
-    You can request this data programatically through the API: <a href="/api"
-      ><code>GET /api</code></a
-    >
+    <a href="https://github.com/neelkarma/silksong-when">Source</a> |
+    <a href="/api">API</a>
   </em>
 </p>
 
